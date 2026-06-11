@@ -367,7 +367,7 @@ async function submitResults(){
       body: formData
     });
 
-    showStatus("התוצאה נשלחה בהצלחה. עכשיו בדקי שנוספה שורה בגיליון Google Sheets.", "success");
+    showStatus("התוצאה נשלחה בהצלחה, תודה", "success");
     const sendStatus = document.getElementById("sendStatus");
     if (sendStatus) sendStatus.innerHTML = "התוצאה נשלחה בהצלחה.";
 

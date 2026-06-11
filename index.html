@@ -279,7 +279,7 @@ function calculate(){
   renderResultGroup("talents",talentScales,pct);
   document.getElementById("interpretation").innerHTML=buildInterpretation(topTalents,pct);
   document.getElementById("crossInsights").innerHTML=buildCrossInsights(pct);
-  lastResult={timestamp:new Date().toISOString(), clientName:clientName.value, clientPhone:clientPhone.value, clientEmail:clientEmail.value, clientWork:clientWork.value, scores:pct, topTalents:topTalents.map(t=>scaleNames[t.key]+" "+t.value+"%"), answers};
+  lastResult={timestamp:new Date().toISOString(), clientName: document.getElementById("clientName").value.trim(), clientPhone:clientPhone.value, clientEmail:clientEmail.value, clientWork:clientWork.value, scores:pct, topTalents:topTalents.map(t=>scaleNames[t.key]+" "+t.value+"%"), answers};
   document.getElementById("results").style.display="block";
   document.getElementById("results").scrollIntoView({behavior:"smooth"});
 }

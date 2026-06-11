@@ -71,10 +71,10 @@
   <section>
     <h2>הנחיות מילוי</h2>
     <div class="intro-grid">
-      <div class="mini"><strong>משך מילוי:</strong><br>10–14 דקות</div>
+      <div class="mini"><strong>משך מילוי:</strong><br>7–10 דקות</div>
       <div class="mini"><strong>שיטת ניקוד:</strong><br>1 = ממש לא נכון לגביי, 5 = נכון מאוד לגביי</div>
       <div class="mini"><strong>חשוב:</strong><br>ענו לפי מה שקורה בפועל ברוב הימים, לא לפי מה שנשמע מרשים או רצוי</div>
-      <div class="mini"><strong>התוצאה:</strong><br>מתקבלת מיידית ונשלחת גם למלווה אם הטופס מחובר לגיליון</div>
+      <div class="mini"><strong>התוצאה:</strong><br>מתקבלת מיידית, ניתן להעביר למלווה ע"י לחיצה על הכפתור שלח/י תוצאה לרוית</div>
     </div>
   </section>
 
@@ -203,10 +203,10 @@ let lastResult = null;
 function optionText(v){
   const labels = {
     1: "1 – ממש לא נכון לגביי",
-    2: "2 – מעט נכון לגביי",
-    3: "3 – נכון לגביי במידה בינונית",
-    4: "4 – נכון לגביי מאוד",
-    5: "5 – נכון לגביי מאוד מאוד"
+    2: "2 – מעט נכון ",
+    3: "3 – נכון במידה בינונית",
+    4: "4 – נכון ברוב המקרים",
+    5: "5 – נכון מאוד לגביי"
   };
   return labels[v];
 }
